@@ -5,6 +5,7 @@
 .vertical__link {
   color: white;
   position: relative;
+  font-size: 0.8rem;
 }
 
 .vertical__link::after {
@@ -13,7 +14,7 @@
   height: 1px;
   background-color: white;
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
   right: 0;
   display: block;
   width: 0;

@@ -73,7 +73,7 @@ function HomePage() {
             },
             modes: {
               bubble: {
-                size: 6,
+                size: 24,
                 distance: 40,
               },
             },
