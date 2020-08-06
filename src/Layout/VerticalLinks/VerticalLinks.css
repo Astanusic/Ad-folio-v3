@@ -1,0 +1,25 @@
+.vertical__links {
+  transform: rotate(-90deg) !important;
+}
+
+.vertical__link {
+  color: white;
+  position: relative;
+}
+
+.vertical__link::after {
+  transition: width 0.2s ease;
+  content: "";
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 0;
+}
+
+.vertical__link:hover::after {
+  width: 100%;
+  left: 0;
+}

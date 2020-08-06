@@ -1,0 +1,11 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 70px;
+  height: 100vh;
+  z-index: 10;
+}
