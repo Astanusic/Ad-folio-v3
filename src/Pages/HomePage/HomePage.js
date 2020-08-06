@@ -1,11 +1,11 @@
 import React from "react";
 import "./HomePage.css";
-import Navigation from "../../Components/Navigation/Navigation";
+import ProjectList from "../../Components/ProjectList/ProjectList";
 
 function HomePage() {
   return (
     <section className="homepage">
-      <Navigation />
+      <ProjectList />
     </section>
   );
 }
