@@ -3,17 +3,18 @@ import "./HomePage.css";
 import ProjectList from "../../Components/ProjectList/ProjectList";
 import Footer from "../../Components/Footer/Footer";
 import Particles from "react-particles-js";
-import Bear from "../../assets/Bear.svg";
+import Header from "../../Components/Header/Header";
 
 function HomePage() {
   return (
     <section className="homepage">
+      <Header />
       <ProjectList />
       <Footer />
       <Particles
         className="particles--js1"
         params={{
-          fps_limit: 28,
+          fps_limit: 27,
           particles: {
             collisions: {
               enable: false,
@@ -26,11 +27,11 @@ function HomePage() {
             },
             line_linked: {
               enable: true,
-              distance: 30,
+              distance: 100,
               opacity: 0.4,
             },
             move: {
-              speed: 1,
+              speed: 0.5,
             },
             opacity: {
               anim: {
@@ -45,7 +46,7 @@ function HomePage() {
           polygon: {
             debug: true,
             enable: true,
-            scale: 1,
+            scale: 1.5,
             type: "inline",
             move: {
               radius: 20,
@@ -82,7 +83,13 @@ function HomePage() {
       <Particles
         className="particles--js2"
         params={{
-          fps_limit: 10,
+          fps_limit: 27,
+          number: {
+            value: 1,
+            density: {
+              enable: false,
+            },
+          },
         }}
       />
     </section>

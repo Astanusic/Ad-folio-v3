@@ -11,7 +11,7 @@
   text-decoration: none;
   color: white;
   z-index: 3;
-  font-size: 36px;
+  font-size: 46px;
   mix-blend-mode: difference;
 }
 
@@ -22,9 +22,9 @@
   z-index: 2;
   top: 0;
   left: 0;
-  clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
   opacity: 0;
-  transition: clip-path 0.7s ease-in-out;
+  transform: scaleY(0);
+  transition: ease-in-out, opacity 0.2s, transform 0.4s;
 }
 
 .project-list__img > img {
@@ -35,7 +35,8 @@
 }
 
 .project__link:hover + .project-list__img {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   opacity: 1;
-  transition: all 0.3s ease-in-out;
+  transform: scaleY(1);
+
+  transition: all 0.5s ease;
 }
