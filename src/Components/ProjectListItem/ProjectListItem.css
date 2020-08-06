@@ -22,9 +22,8 @@
   z-index: 2;
   top: 0;
   left: 0;
-  opacity: 0;
   transform: scaleY(0);
-  transition: ease-in-out, opacity 0.2s, transform 0.4s;
+  transition: ease-in-out, transform 0.2s;
 }
 
 .project-list__img > img {
@@ -35,7 +34,6 @@
 }
 
 .project__link:hover + .project-list__img {
-  opacity: 1;
   transform: scaleY(1);
 
   transition: all 0.5s ease;
